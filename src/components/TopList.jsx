@@ -15,6 +15,15 @@ function TopList() {
             <div className="kid_foto">
                 <img src="/Fotos/topkids.jpg" alt="" />
             </div>
+
+
+            <input type="checkbox" id="burger-toggle" />
+            <label htmlFor="burger-toggle" className="burger-icon" aria-label="Menu">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="close">&#10005;</span> {/* ✖️ */}
+            </label>
             <nav className="navbar">
 
                 <ul className="nav-links">

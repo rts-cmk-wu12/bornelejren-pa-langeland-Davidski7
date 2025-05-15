@@ -116,3 +116,81 @@ header {
     height: 30px;
     width: auto;
 }
+
+
+#burger-toggle {
+    display: none;
+}
+
+
+.burger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 30px;
+    height: 25px;
+    z-index: 9999;
+}
+
+.burger-icon .bar {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.burger-icon .close {
+    display: none;
+    color: black;
+    font-size: 28px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+
+@media (max-width: 768px) {
+    .burger-icon {
+        display: flex;
+    }
+
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        padding-top: 100px;
+        gap: 30px;
+        text-align: center;
+        z-index: 998;
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
+    }
+
+
+    #burger-toggle:checked+.burger-icon+.navbar .nav-links {
+        display: flex;
+    }
+
+
+    #burger-toggle:checked+.burger-icon .bar {
+        display: none;
+    }
+
+    #burger-toggle:checked+.burger-icon .close {
+        display: block;
+    }
+}

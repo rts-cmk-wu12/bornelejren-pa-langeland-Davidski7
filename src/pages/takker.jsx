@@ -1,6 +1,7 @@
 import "../style/main.scss";
 import TopList from "../components/TopList";
 import Footer from "../components/footer";
+import SponsorList from "../components/SponsorList";
 
 function Takker() {
     return (
@@ -15,6 +16,8 @@ function Takker() {
                         - det være sig ved naturaliesponsorater eller økonomisk støtte fra støttemedlemmer,
                         virksomhedssponsorer og donationer fra fonde.</p>
                     <p>Liste over sponsorer</p>
+
+                    <SponsorList />
                 </main>
 
                 <Footer />
