@@ -22,7 +22,7 @@ function TopList() {
                 <span className="bar"></span>
                 <span className="bar"></span>
                 <span className="bar"></span>
-                <span className="close">&#10005;</span> {/* ✖️ */}
+                <span className="close">&#10005;</span>
             </label>
             <nav className="navbar">
 

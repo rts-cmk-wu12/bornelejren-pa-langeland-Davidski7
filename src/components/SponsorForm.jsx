@@ -28,9 +28,7 @@ function SponsorForm() {
             body: JSON.stringify(formData)
         });
 
-        if (!res.ok) {
-            throw new Error("Noget gik galt med tilmelding");
-        }
+
 
         alert("Tak for din tilmelding som sponsor!");
         setFormData({

@@ -19,7 +19,7 @@ function SponsorList() {
     return (
         <ul>
             {sponsors.map((sponsor) => (
-                <li key={sponsor._id}>{sponsor.companyName}</li>
+                <li className="sponsor_list" key={sponsor._id}>{sponsor.companyName}</li>
             ))}
         </ul>
     );
